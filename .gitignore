@@ -1,0 +1,31 @@
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# PHP dependencies
+/vendor/
+
+# Node dependencies
+# Not currently needed, but useful if npm is added later
+/node_modules/
+
+# Build / coverage output
+/dist/
+/build/
+/coverage/
