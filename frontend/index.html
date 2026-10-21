@@ -1,11 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wordle</title>
-</head>
-<body>
-   <button onclick="window.location.href='pages/home.html'">Welcome</button>
-</body>
+    <link rel="stylesheet" href="constants/layout.css">
+  </head>
+  <body>
+    <div id="layout-header"></div>
+    <main>
+      <button onclick="window.location.href = 'pages/home.html'">Welcome</button>
+    </main>
+    <div id="layout-footer"></div>
+    <script src="js/layout/layout.js"></script>
+    <script>loadLayout('layout/layout.html');</script>
+  </body>
 </html>
