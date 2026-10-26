@@ -1,18 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="../constants/layout.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="../constants/layout.css" />
+  </head>
+  <body>
     <div id="layout-header"></div>
+
     <main>
-        Wordle
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-tiles">
+          <div class="tile green">W</div>
+          <div class="tile yellow">O</div>
+          <div class="tile">R</div>
+          <div class="tile green">D</div>
+          <div class="tile yellow">L</div>
+          <div class="tile">E</div>
+        </div>
+        <h1 class="hero-title">WORDLE</h1>
+        <p class="hero-subtitle">
+          Guess the hidden word in six tries. A new puzzle every day.
+        </p>
+        <a href="game.html" class="btn-play">Play Now</a>
+      </section>
+
+      <!-- How to Play -->
+      <section class="how-to-play">
+        <h2>How to Play</h2>
+        <ul class="rules">
+          <li>Each guess must be a valid 5-letter word.</li>
+          <li>Hit Enter to submit your guess.</li>
+          <li>Tile colors reveal how close your guess was to the word.</li>
+        </ul>
+
+        <div class="examples">
+          <div class="example">
+            <div class="example-row">
+              <div class="tile sm green">W</div>
+              <div class="tile sm">E</div>
+              <div class="tile sm">A</div>
+              <div class="tile sm">R</div>
+              <div class="tile sm">Y</div>
+            </div>
+            <p><strong>W</strong> is in the word and in the correct spot.</p>
+          </div>
+          <div class="example">
+            <div class="example-row">
+              <div class="tile sm">P</div>
+              <div class="tile sm yellow">I</div>
+              <div class="tile sm">L</div>
+              <div class="tile sm">L</div>
+              <div class="tile sm">S</div>
+            </div>
+            <p><strong>I</strong> is in the word but in the wrong spot.</p>
+          </div>
+          <div class="example">
+            <div class="example-row">
+              <div class="tile sm">V</div>
+              <div class="tile sm">A</div>
+              <div class="tile sm">G</div>
+              <div class="tile sm gray">U</div>
+              <div class="tile sm">E</div>
+            </div>
+            <p><strong>U</strong> is not in the word in any spot.</p>
+          </div>
+        </div>
+
+        <a href="howtoplay.html" class="link-more"
+          >Read full instructions &rarr;</a
+        >
+      </section>
+
+      <!-- Page Navigation -->
+      <section class="page-nav">
+        <h2>Pages</h2>
+        <div class="page-nav-grid">
+          <a href="home.html" class="page-nav-card">
+            <span>Home</span>
+            <small>You are here</small>
+          </a>
+          <a href="game.html" class="page-nav-card">
+            <span>Play</span>
+            <small>Start the game</small>
+          </a>
+          <a href="howtoplay.html" class="page-nav-card">
+            <span>How to Play</span>
+            <small>Rules &amp; examples</small>
+          </a>
+          <a href="about.html" class="page-nav-card">
+            <span>About</span>
+            <small>Project info</small>
+          </a>
+        </div>
+      </section>
     </main>
+
     <div id="layout-footer"></div>
     <script src="../js/layout/layout.js"></script>
-    <script>loadLayout('../layout/layout.html');</script>
-</body>
+    <script>
+      loadLayout("../layout/layout.html");
+    </script>
+  </body>
 </html>
